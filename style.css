@@ -24,6 +24,7 @@
 *{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 body{
@@ -31,12 +32,10 @@ body{
     background-color: var(--bg-color);
     font-family: Poppins, serif;
     color: var(--text-color);
-    overflow-x: hidden;
 }
 
 html{
     scroll-behavior: smooth;
-    /*overflow-x: hidden;*/
 }
 
 /*Nav Bar Desktop*/
