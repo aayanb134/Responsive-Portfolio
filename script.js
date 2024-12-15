@@ -11,7 +11,8 @@ function hideSideBar(){
 function toggleTheme() {
     const html = document.documentElement;
     const themeIcon = document.getElementById('theme-icon');
-
+    const educationIcon = document.getElementById('education-icon');
+    const experienceIcon = document.getElementById('experience-icon');
     // Add transition
     document.body.style.transition = 'background-color 0.3s ease, color 0.3s ease';
     document.querySelectorAll('.icon, svg').forEach(el => {
@@ -21,10 +22,14 @@ function toggleTheme() {
     if (html.getAttribute('data-theme') === 'dark') {
         html.removeAttribute('data-theme');
         themeIcon.src = './resources/light.png';
+        educationIcon.src = './resources/education.png';
+        experienceIcon.src = './resources/experience.png';
         localStorage.setItem('theme', 'light');
     } else {
         html.setAttribute('data-theme', 'dark');
         themeIcon.src = './resources/dark.png';
+        educationIcon.src = './resources/educationDark.png';
+        experienceIcon.src = './resources/experienceDark.png';
         localStorage.setItem('theme', 'dark');
     }
 
